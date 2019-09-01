@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true">
+
+	<android.support.design.widget.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+
+		<android.support.v7.widget.Toolbar
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay"
+			android:id="@+id/activityloginToolbar1"/>
+
+	</android.support.design.widget.AppBarLayout>
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:paddingTop="56dp"
+		android:paddingBottom="65dp"
+		android:background="#FFF7F7F7">
+
+		<android.support.v4.widget.SwipeRefreshLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/swipe_re1">
+
+			<ListView
+				android:layout_height="match_parent"
+				android:layout_width="match_parent"
+				android:id="@+id/reListView1"/>
+
+		</android.support.v4.widget.SwipeRefreshLayout>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/releaseLinearLayout"
+		android:layout_gravity="bottom"
+		android:layout_height="65dp"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:background="#FFFFFF"
+		android:layout_alignParentBottom="true">
+
+		<View
+			android:layout_height="1dp"
+			android:layout_width="match_parent"
+			android:background="#C1C1C1"
+			android:alpha="0.5"/>
+
+		<LinearLayout
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			android:layout_width="match_parent"
+			android:layout_height="70dp"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:padding="5dp">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_alignParentRight="true">
+
+					<RelativeLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+
+						<com.ljbbq.jin.view.Round
+							android:id="@+id/dzt"
+							android:layout_width="42dp"
+							android:layout_height="42dp"
+							android:background="?attr/selectableItemBackgroundBorderless"
+							android:clickable="true"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true"
+							android:padding="12dp"
+							app:roundColor="#eeeeee"/>
+
+						<ImageView
+							android:id="@+id/dz"
+							android:layout_width="22dp"
+							android:layout_height="22dp"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true"
+							android:src="@drawable/ic_thumb_up"/>
+
+					</RelativeLayout>
+
+					<TextView
+						android:id="@+id/dz1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginRight="6dp"
+						android:textColor="#787878"
+						android:text="0"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:padding="5dp">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_alignParentRight="true">
+
+					<RelativeLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+
+						<com.ljbbq.jin.view.Round
+							android:id="@+id/plt"
+							android:layout_width="42dp"
+							android:layout_height="42dp"
+							android:background="?attr/selectableItemBackgroundBorderless"
+							android:clickable="true"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true"
+							android:padding="12dp"
+							app:roundColor="#eeeeee"/>
+
+						<ImageView
+							android:id="@+id/pl"
+							android:layout_width="22dp"
+							android:layout_height="22dp"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true"
+							android:src="@drawable/ic_comment_text"/>
+
+					</RelativeLayout>
+
+					<TextView
+						android:id="@+id/pl1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginRight="6dp"
+						android:textColor="#787878"
+						android:text="0"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:padding="5dp">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_alignParentRight="true">
+
+					<RelativeLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+
+						<com.ljbbq.jin.view.Round
+							android:id="@+id/sct"
+							android:layout_width="42dp"
+							android:layout_height="42dp"
+							android:background="?attr/selectableItemBackgroundBorderless"
+							android:clickable="true"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true"
+							android:padding="12dp"
+							app:roundColor="#eeeeee"/>
+
+						<ImageView
+							android:id="@+id/sc"
+							android:layout_width="22dp"
+							android:layout_height="22dp"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true"/>
+
+					</RelativeLayout>
+
+					<TextView
+						android:id="@+id/sc1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginRight="6dp"
+						android:textColor="#787878"
+						android:text="0"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center"
+				android:padding="5dp">
+
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_alignParentRight="true">
+
+					<RelativeLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content">
+
+						<com.ljbbq.jin.view.Round
+							android:id="@+id/fxt"
+							android:layout_width="42dp"
+							android:layout_height="42dp"
+							android:background="?attr/selectableItemBackgroundBorderless"
+							android:clickable="true"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true"
+							android:padding="12dp"
+							app:roundColor="#eeeeee"/>
+
+						<ImageView
+							android:id="@+id/fx"
+							android:layout_width="22dp"
+							android:layout_height="22dp"
+							android:layout_centerHorizontal="true"
+							android:layout_centerVertical="true"
+							android:src="@drawable/ic_share_variant"/>
+
+					</RelativeLayout>
+
+					<TextView
+						android:id="@+id/fx1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginRight="6dp"
+						android:textColor="#787878"
+						android:text="0"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+

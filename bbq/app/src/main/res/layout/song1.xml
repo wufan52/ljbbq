@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:paddingLeft="5dp"
+	android:paddingRight="5dp"
+	android:paddingTop="56dp">
+
+	<android.support.v4.widget.SwipeRefreshLayout
+		android:id="@+id/songrefresh"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingTop="5dp">
+
+		<ListView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:scrollbars="none"
+			android:dividerHeight="2dp"
+			android:divider="@null"
+			android:id="@+id/songListView"/>
+
+	</android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>
+

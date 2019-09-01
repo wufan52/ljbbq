@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:paddingTop="55dp"
+	android:gravity="top|center">
+
+	<LinearLayout
+		android:layout_height="60dp"
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:gravity="center"
+		android:background="?attr/colorPrimary"
+		android:paddingLeft="5dp"
+		android:paddingRight="5dp">
+
+		<EditText
+			android:layout_height="40dp"
+			android:layout_width="wrap_content"
+			android:ems="10"
+			android:id="@+id/a"
+			android:background="@drawable/buttonz"
+			android:layout_weight="3"
+			android:layout_marginRight="5dp"
+			android:hint="请输入歌曲名或作者名"/>
+
+		<Button
+			android:layout_height="40dp"
+			android:layout_width="wrap_content"
+			android:text="搜索"
+			android:onClick="tt"
+			android:background="@drawable/buttonb"
+			android:layout_weight="1"/>
+
+	</LinearLayout>
+
+	<ListView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:id="@+id/list"
+		android:paddingLeft="5dp"
+		android:paddingRight="5dp"/>
+
+</LinearLayout>
+
